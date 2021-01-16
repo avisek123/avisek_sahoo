@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>
-       Avisek Sahoo
-    </title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Avisek Sahoo</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
     <header id="body-header">
         <nav>
+            
+            <div class = "dropdown-menu text-right">
+                <div class="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class ="dropdown-list nav-menu">
+                    <ul class = "no-list-style"> 
+                        <li >
+                            <a href="#"> Home </a>
+                        </li>
+                        <li>
+                            <a href="#about"> About </a>
+                        </li>
+                        <li>
+                            <a href="#skills"> Skills </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#education">Education</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
 
-            <ul class="horizontal-list text-center nav-menu">
+             </div>   
+
+            <ul class="no-list-style horizontal-list text-center nav-menu">
                 <li>
                     <a href="#"> Home </a>
                 </li>
@@ -34,34 +61,29 @@
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
-
-
             </ul>
+
         </nav>
 
         <div id="name-social-container">
             <div class="text-center">
-                <h1 id="my-name">
-                        Avisek Sahoo
-                </h1>
+                <h1 id="my-name">Avisek Sahoo</h1>
             </div>
             <div>
-                <ul class="horizontal-list text-center social-icons">
+                <ul class="no-list-style horizontal-list text-center social-icons">
                     <li>
                         <a href="https://www.linkedin.com/in/avisek-sahoo-bb1a7a1a5/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
-
+                    <li>
+                        <a href="https://www.facebook.com/avisek.sahoo.984">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
                     <li>
                         <a href="https://www.instagram.com/avisek_143/">
                             <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.facebook.com/avisek.sahoo.984">
-                            <i class="fab fa-facebook"></i>
                         </a>
                     </li>
                     <li>
@@ -74,8 +96,6 @@
                             <i class="fab fa-github"></i>
                         </a>
                     </li>
-
-
                 </ul>
 
             </div>
@@ -86,15 +106,21 @@
     <main>
 
         <section id="about">
-            <div id="my_img">
-                <img src="https://avatars3.githubusercontent.com/u/62586380?s=460&u=86f4815a5f979fca0610afae451283f5e034b0a7&v=4" alt="my img">
+            <div id="my-image">
+                <img src="https://avatars3.githubusercontent.com/u/62586380?s=460&u=86f4815a5f979fca0610afae451283f5e034b0a7&v=4">
             </div>
-            <div id="my_para">
-                <p>I am at present pursuing my Master's degree in Computer Application.
-                    I ❤️ building responsive websites and mobile apps. I constantly learning and improving my skills.</p>
+
+            <div id="about-para">
+
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and <span class="text-highlight">typesetting industry</span>. Lorem Ipsum has been the industry's standard <span class="text-highlight">dummy text ever</span> since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s <span class="text-highlight">with the release of Letraset</span> sheets containing Lorem Ipsum.
+                </p>
+
             </div>
-           
+
         </section>
+
+
 
         <section id="skills">
             <h1 class="section-heading mb75px ">
@@ -117,47 +143,38 @@
                 <div class="skill-progress">
                     <div class="ninty-percent mb-light-purple">
                         <div class="skill-name">
-                            <span>CSS</span>
+                            <span> CSS </span>
                         </div>
                     </div>
-
                 </div>
                 <div class="skill-progress">
                     <div class="eighty-percent mb-teal">
                         <div class="skill-name">
-                            <span>JavaScript</span>
+                            <span> Javascript </span>
                         </div>
                     </div>
-
                 </div>
                 <div class="skill-progress">
                     <div class="eighty-five-percent mb-blue">
                         <div class="skill-name">
-                            <span>ReactJs</span>
+                            <span> React.js </span>
                         </div>
                     </div>
-
-                </div>
-                <div class="skill-progress">
-                    <div class="fifty-percent mb-teal">
-                        <div class="skill-name">
-                            <span>Nodejs</span>
-                        </div>
-                    </div>
-
                 </div>
                 <div class="skill-progress">
                     <div class="fifty-percent mb-blue">
                         <div class="skill-name">
-                            <span>MongoDB</span>
+                            <span> NodeJs </span>
                         </div>
                     </div>
-
                 </div>
-                
-                
-              
-              
+                <div class="skill-progress">
+                    <div class="fifty-percent mb-teal">
+                        <div class="skill-name">
+                            <span> MongoDB </span>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -167,14 +184,86 @@
 
         <section id="education">
 
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fas fa-graduation-cap"></i>
+                </span>
+                <span> Education </span>
+            </h1>
+
+            <div class="timeline">
+
+                <div class="timeline-box left ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://imga.androidappsapk.co/ykRCCfZqxp-6P4_pa_BxglFUNZzWpVF2CgoND26ubyTQy5tO8fAS8-O7boCo7fkMMRU=s300">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> MCA </h3>
+                        <h4 class="experience-company-name "> Gandhi Institute For Technology</h4>
+                        <h5 class="experience-duration m0"> Continue </h5>
+
+                        <p class="experience-description text-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        
+                    </div>
+                </div>
+                
+                <div class="timeline-box right ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://storage.googleapis.com/ezap-prod/colleges/1767/chitalo-mohavidyalaya-jajapur-logo.jpg">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> BSc. (CS) </h3>
+                        <h4 class="experience-company-name "> Chitalo Mahavidyalaya </h4>
+                        <h5 class="experience-duration m0"> 2015 - 2018 </h5>
+                        <p class="experience-description text-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+
+                <div class="timeline-box left ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://scontent.fbbi1-1.fna.fbcdn.net/v/t1.0-9/11150710_1443894429242214_6069802444057010756_n.jpg?_nc_cat=100&ccb=2&_nc_sid=09cbfe&_nc_ohc=Z23R19Kxpe4AX-v5QEN&_nc_ht=scontent.fbbi1-1.fna&oh=80ef7fe9a0954e95e1e47c6a43a69298&oe=6027A359"
+                            >
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> HSC </h3>
+                        <h4 class="experience-company-name "> Surajmal Saha College </h4>
+                        <h5 class="experience-duration m0"> 2013 - 2015 </h5>
+
+                        <p class="experience-description text-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+                <div class="timeline-box right ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> SSC </h3>
+                        <h4 class="experience-company-name "> Brahmagiri High School</h4>
+                        <h5 class="experience-duration m0"> 2013 </h5>
+                        <p class="experience-description text-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+         
+                
+                <div id="timeline-divider">
+                    <div class="timeline-traveller">
+                        <div>
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
 
         <section id="portfolio">
-
+        
         </section>
 
-        <section id="contact">
 
+        <section id="contact">
+            
         </section>
 
     </main>
