@@ -347,6 +347,16 @@ section:nth-child(2n + 1) {
 	text-align: center;
 	padding: 10px;
 }
+.portfolio-details a {
+	transition: all 0.5s ease-in-out;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	color: transparent;
+	text-align: center;
+	padding: 10px;
+}
 
 .portfolio-image-container:hover {
 	box-shadow: 0 0 20px #74adc8;
@@ -357,7 +367,117 @@ section:nth-child(2n + 1) {
 	color: white;
 }
 
-/* Contact Form */
+#contact {
+	background-color: #0abcf9;
+	background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+	color: white;
+	padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+	color: white;
+}
+
+#contact-form {
+	margin-left: 20%;
+}
+
+#contact-container {
+	display: flex;
+}
+
+#my-details-container {
+	width: 35%;
+	margin-left: 6%;
+}
+
+#my-details-container h3 {
+	color: white;
+	font-weight: 550;
+	font-size: 1.2rem;
+}
+
+#contact-form-container {
+	width: 50%;
+}
+
+#my-details-container p {
+	color: #d9dcdd;
+	font-size: 0.9rem;
+}
+
+.my-details-info-container {
+	margin-bottom: 20px;
+	color: #d9dcdd;
+	font-size: 1rem;
+}
+
+.my-details-info-container span {
+	margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+	color: white;
+}
+
+.my-details-icon {
+	width: 1rem;
+	height: 1rem;
+	vertical-align: bottom;
+	margin-right: 0.5rem;
+}
+.copyright {
+	font-size: 1rem;
+}
+
+#contact-form input,
+textarea {
+	max-width: 90%;
+	margin: 15px;
+	padding: 4px 10px;
+	border: 0px solid transparent;
+	border-bottom: 2px solid white;
+	color: #d9dcdd;
+	background: transparent;
+	width: 90%;
+	line-height: 1.6;
+	font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+	background: transparent;
+	font-size: 0.95rem;
+	border: 2px solid white;
+	margin-top: 5%;
+	margin-left: 35%;
+	border-radius: 2px;
+	color: white;
+	font-family: sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.046875em;
+	line-height: 1;
+	padding: 0.8em 0.8em 0.78em;
+	text-transform: uppercase;
+}
+
+#contact-form button:hover {
+	background: white;
+	color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+	font-size: 1.2rem;
+	margin: 40px 10px 10px;
+	padding: 10px 14px 20px 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
 
 /* Common Text Align Classes */
 
@@ -453,6 +573,57 @@ section:nth-child(2n + 1) {
 }
 
 @media only screen and (max-width: 768px) {
+	#about {
+		height: auto;
+		width: 100%;
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	#my-image img {
+		height: 100%;
+		width: 100%;
+		border-radius: 50%;
+		border: 3px solid white;
+		box-shadow: 1px 1px 10px 2px lightgrey;
+	}
+
+	#about-para {
+		padding: 10px;
+		width: 70%;
+		text-align: justify;
+		color: grey;
+		line-height: 28px;
+		font-size: 1.1rem;
+		margin: auto;
+	}
+	#my-image {
+		height: 12rem;
+		width: 12rem;
+		margin: auto;
+		margin-top: -17vh;
+	}
+
+	#my-image img {
+		height: 100%;
+		width: 100%;
+		border-radius: 50%;
+		border: 3px solid white;
+		box-shadow: 1px 1px 10px 2px lightgrey;
+	}
+	#body-header {
+		height: 65vh;
+		opacity: 0.8;
+		background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		padding-top: 1.2rem;
+	}
+	.timeline-container {
+		text-align: right;
+	}
+
 	.timeline-box {
 		width: 90%;
 		left: 10% !important;
@@ -463,8 +634,8 @@ section:nth-child(2n + 1) {
 	}
 
 	#timeline-divider {
-		top: 10%;
-		left: 2%;
+		top: 8%;
+		left: 3%;
 	}
 
 	#contact-form {
@@ -483,5 +654,8 @@ section:nth-child(2n + 1) {
 	#contact-form-container {
 		width: 80%;
 		margin: 10%;
+	}
+	.social-icons {
+		width: 100%;
 	}
 }
