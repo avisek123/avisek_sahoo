@@ -136,22 +136,29 @@ export const Hero: React.FC = () => {
               <span className="w-2 h-2 rounded-full bg-green-400/80 block" />
             </div>
 
-            {/* FIX 5: Extended code snippet to fill the phone frame more tightly */}
+            {/* Code snippet — TanStack Query + Zustand */}
             <div className="flex-1 px-4 font-mono text-[9px] text-indigo-500 dark:text-indigo-300 leading-relaxed overflow-hidden text-left pb-4">
-              <p className="text-muted-custom/70">// mobile bootstrap</p>
               <p><span className="text-pink-500">import</span> React <span className="text-pink-500">from</span> <span className="text-amber-500">'react'</span>;</p>
-              <p><span className="text-pink-500">import</span> &#123; AppRegistry &#125; <span className="text-pink-500">from</span> <span className="text-amber-500">'react-native'</span>;</p>
-              <p><span className="text-pink-500">import</span> &#123; store &#125; <span className="text-pink-500">from</span> <span className="text-amber-500">'./store'</span>;</p>
+              <p><span className="text-pink-500">import</span> &#123; AppRegistry &#125; <span className="text-pink-500">from</span></p>
+              <p className="pl-3"><span className="text-amber-500">'react-native'</span>;</p>
+              <p><span className="text-pink-500">import</span> &#123;</p>
+              <p className="pl-3"><span className="text-blue-500">QueryClientProvider</span>,</p>
+              <p className="pl-3"><span className="text-blue-500">QueryClient</span>,</p>
+              <p>&#125; <span className="text-pink-500">from</span> <span className="text-amber-500">'@tanstack/react-query'</span>;</p>
+              <p><span className="text-pink-500">import</span> &#123; <span className="text-blue-500">useVaaniStore</span> &#125; <span className="text-pink-500">from</span> <span className="text-amber-500">'./store'</span>;</p>
+              <br />
+              <p><span className="text-purple-500">const</span> <span className="text-blue-500">queryClient</span> = <span className="text-pink-500">new</span> <span className="text-green-500">QueryClient</span>();</p>
               <br />
               <p><span className="text-purple-500">const</span> <span className="text-blue-500">App</span> = () =&gt; (</p>
-              <p className="pl-3">&lt;<span className="text-green-500">Provider</span> store=&#123;store&#125;&gt;</p>
+              <p className="pl-3">&lt;<span className="text-green-500">QueryClientProvider</span></p>
+              <p className="pl-6">client=&#123;<span className="text-blue-500">queryClient</span>&#125;&gt;</p>
               <p className="pl-6">&lt;<span className="text-green-500">Container</span>&gt;</p>
               <p className="pl-9">&lt;<span className="text-green-500">VaaniChat</span></p>
               <p className="pl-12">voiceChannels=&#123;<span className="text-blue-500">true</span>&#125;</p>
               <p className="pl-12">aiAssistant=&#123;<span className="text-blue-500">true</span>&#125;</p>
               <p className="pl-9">/&gt;</p>
               <p className="pl-6">&lt;/<span className="text-green-500">Container</span>&gt;</p>
-              <p className="pl-3">&lt;/<span className="text-green-500">Provider</span>&gt;</p>
+              <p className="pl-3">&lt;/<span className="text-green-500">QueryClientProvider</span>&gt;</p>
               <p>);</p>
               <br />
               <p className="text-muted-custom/70">// register app entry</p>
@@ -180,31 +187,31 @@ export const Hero: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* FIX 2: Expo chip — repositioned to straddle left edge of phone (like Redux Toolkit) */}
+          {/* Chip 1: Expo — top-right, straddles right edge of phone */}
           <motion.div
-            animate={{ y: [0, -8, 0] }}
+            animate={{ y: [0, -7, 0] }}
             transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
-            className="absolute top-20 -left-8 px-3 py-1.5 rounded-lg border border-border-custom bg-card-custom/90 backdrop-blur-sm text-xs font-semibold shadow-sm text-fg-custom z-10"
+            className="absolute top-16 -right-12 px-3 py-1.5 rounded-lg border border-border-custom bg-card-custom/90 backdrop-blur-sm text-xs font-semibold shadow-sm text-fg-custom z-10"
           >
             Expo 🚀
           </motion.div>
 
-          {/* Redux Toolkit — kept in place, straddles left edge */}
+          {/* Chip 2: Zustand — mid-left, straddles left edge of phone */}
           <motion.div
             animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Infinity, duration: 4.5, ease: 'easeInOut', delay: 0.5 }}
-            className="absolute bottom-24 -left-8 px-3 py-1.5 rounded-lg border border-border-custom bg-card-custom/90 backdrop-blur-sm text-xs font-semibold shadow-sm text-fg-custom z-10"
+            transition={{ repeat: Infinity, duration: 4.8, ease: 'easeInOut', delay: 0.6 }}
+            className="absolute top-1/2 -left-14 -translate-y-1/2 px-3 py-1.5 rounded-lg border border-border-custom bg-card-custom/90 backdrop-blur-sm text-xs font-semibold shadow-sm text-fg-custom z-10"
           >
-            Redux Toolkit ⚙️
+            Zustand 🐻
           </motion.div>
 
-          {/* FIX 2: Supabase chip — repositioned to straddle right edge of phone */}
+          {/* Chip 3: TanStack Query — lower-right, straddles right edge of phone */}
           <motion.div
             animate={{ x: [0, 5, 0] }}
-            transition={{ repeat: Infinity, duration: 5, ease: 'easeInOut', delay: 0.2 }}
-            className="absolute top-1/2 -right-10 -translate-y-1/2 px-3 py-1.5 rounded-lg border border-border-custom bg-card-custom/90 backdrop-blur-sm text-xs font-semibold shadow-sm text-fg-custom z-10"
+            transition={{ repeat: Infinity, duration: 5.2, ease: 'easeInOut', delay: 0.3 }}
+            className="absolute bottom-28 -right-16 px-3 py-1.5 rounded-lg border border-border-custom bg-card-custom/90 backdrop-blur-sm text-xs font-semibold shadow-sm text-fg-custom z-10"
           >
-            Supabase ⚡
+            TanStack Query 🔄
           </motion.div>
         </div>
 

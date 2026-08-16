@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Play } from 'lucide-react';
+import { ArrowUpRight, Play, Apple } from 'lucide-react';
 import { projectsData } from '../data/projects';
 import { PhoneMockup } from './PhoneMockup';
 
@@ -112,16 +112,28 @@ export const Projects: React.FC = () => {
                   </div>
 
                   {/* Actions CTA */}
-                  <div className="pt-2">
+                  <div className="pt-2 flex flex-wrap gap-3">
                     <a
                       href={project.googlePlayUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2.5 px-5 py-3 rounded-full bg-slate-950 dark:bg-slate-900 border border-slate-850 hover:bg-slate-900 text-white font-sans text-xs font-bold tracking-wider uppercase shadow-lg shadow-black/10 transition-colors"
+                      className="inline-flex items-center gap-2.5 px-5 py-3 rounded-full bg-slate-950 dark:bg-slate-900 border border-slate-800 hover:bg-slate-800 text-white font-sans text-xs font-bold tracking-wider uppercase shadow-lg shadow-black/10 transition-colors"
                     >
                       <Play size={12} fill="currentColor" />
-                      View on Google Play →
+                      Google Play →
                     </a>
+
+                    {project.appStoreUrl && (
+                      <a
+                        href={project.appStoreUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2.5 px-5 py-3 rounded-full bg-slate-950 dark:bg-slate-900 border border-slate-800 hover:bg-slate-800 text-white font-sans text-xs font-bold tracking-wider uppercase shadow-lg shadow-black/10 transition-colors"
+                      >
+                        <Apple size={13} />
+                        App Store →
+                      </a>
+                    )}
                   </div>
 
                 </div>
