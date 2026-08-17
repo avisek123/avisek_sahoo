@@ -24,7 +24,7 @@ export const About: React.FC = () => {
             {/* Image Frame */}
             <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl overflow-hidden flex-shrink-0 relative group" style={{boxShadow: '0 0 0 3px #4f46e5, 0 8px 32px rgba(79,70,229,0.25)'}}>
               <img 
-                src="./img/avisek.png" 
+                src="https://avatars.githubusercontent.com/u/62586380?v=4" 
                 alt={profileData.name} 
                 className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                 onError={(e) => {
