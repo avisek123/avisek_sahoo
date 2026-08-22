@@ -83,12 +83,9 @@ export const Hero: React.FC = () => {
             </a>
 
             <a
-              href="#"
+              href="/resume.pdf"
+              download="Avisek_Sahoo_Resume.pdf"
               className="px-4 py-2 font-sans text-xs font-bold tracking-wider text-muted-custom hover:text-fg-custom flex items-center gap-1.5 uppercase transition-colors"
-              onClick={(e) => {
-                e.preventDefault();
-                alert("CV download triggered or resume link placeholder click. (Actual CV details are displayed on-site.)");
-              }}
             >
               <Download size={14} />
               Download Resume
