@@ -30,7 +30,7 @@ export const PhoneMockup: React.FC<PhoneMockupProps> = ({ projectId, gradient, a
   };
 
   return (
-    <div className="relative mx-auto w-[250px] h-[500px]">
+    <div className="relative mx-auto w-[220px] sm:w-[250px] h-[440px] sm:h-[500px]">
       {/* Phone Outline Glass Body */}
       <div 
         className="absolute inset-0 rounded-[38px] border-4 border-slate-800 dark:border-slate-850 bg-slate-900 shadow-2xl overflow-hidden flex flex-col p-1.5"

@@ -13,10 +13,10 @@ export const Hero: React.FC = () => {
 
   return (
     <section className="relative min-h-[90vh] flex items-center pt-24 overflow-hidden dot-grid">
-      <div className="max-w-6xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10 py-12">
+      <div className="max-w-6xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-12 items-center z-10 py-12">
         
         {/* Left Column: Heading and description */}
-        <div className="lg:col-span-7 space-y-8 text-left">
+        <div className="md:col-span-12 lg:col-span-7 space-y-8 text-left order-1">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
@@ -112,14 +112,14 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Right Column: Subtle abstract mobile device and code lines */}
-        <div className="lg:col-span-5 relative hidden lg:flex justify-center items-center h-[520px]">
+        <div className="md:col-span-12 lg:col-span-5 relative flex justify-center items-center h-[460px] sm:h-[520px] order-2 mt-8 lg:mt-0">
 
           {/* Phone frame */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9, rotate: -5 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative w-[240px] h-[480px] border-2 border-border-custom bg-card-custom/20 rounded-[40px] p-2 flex flex-col"
+            className="relative w-[220px] sm:w-[240px] h-[440px] sm:h-[480px] border-2 border-border-custom bg-card-custom/20 rounded-[40px] p-2 flex flex-col"
           >
             {/* Notch */}
             <div className="w-16 h-3.5 bg-border-custom/40 rounded-full mx-auto mt-1 flex items-center justify-center flex-shrink-0">
@@ -188,7 +188,7 @@ export const Hero: React.FC = () => {
           <motion.div
             animate={{ y: [0, -7, 0] }}
             transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
-            className="absolute top-16 -right-12 px-3 py-1.5 rounded-lg border border-border-custom bg-card-custom/90 backdrop-blur-sm text-xs font-semibold shadow-sm text-fg-custom z-10"
+            className="absolute top-16 -right-6 sm:-right-12 px-3 py-1.5 rounded-lg border border-border-custom bg-card-custom/90 backdrop-blur-sm text-xs font-semibold shadow-sm text-fg-custom z-10"
           >
             Expo 🚀
           </motion.div>
@@ -197,7 +197,7 @@ export const Hero: React.FC = () => {
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 4.8, ease: 'easeInOut', delay: 0.6 }}
-            className="absolute top-1/2 -left-14 -translate-y-1/2 px-3 py-1.5 rounded-lg border border-border-custom bg-card-custom/90 backdrop-blur-sm text-xs font-semibold shadow-sm text-fg-custom z-10"
+            className="absolute top-1/2 -left-8 sm:-left-14 -translate-y-1/2 px-3 py-1.5 rounded-lg border border-border-custom bg-card-custom/90 backdrop-blur-sm text-xs font-semibold shadow-sm text-fg-custom z-10"
           >
             Zustand 🐻
           </motion.div>
@@ -206,7 +206,7 @@ export const Hero: React.FC = () => {
           <motion.div
             animate={{ x: [0, 5, 0] }}
             transition={{ repeat: Infinity, duration: 5.2, ease: 'easeInOut', delay: 0.3 }}
-            className="absolute bottom-28 -right-16 px-3 py-1.5 rounded-lg border border-border-custom bg-card-custom/90 backdrop-blur-sm text-xs font-semibold shadow-sm text-fg-custom z-10"
+            className="absolute bottom-28 -right-8 sm:-right-16 px-3 py-1.5 rounded-lg border border-border-custom bg-card-custom/90 backdrop-blur-sm text-xs font-semibold shadow-sm text-fg-custom z-10"
           >
             TanStack Query 🔄
           </motion.div>
@@ -215,7 +215,7 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Decorative gradient glowing orb */}
-      <div className="absolute -top-40 right-0 w-[400px] h-[400px] rounded-full bg-indigo-600/5 dark:bg-indigo-500/5 blur-3xl -z-10" />
+      <div className="absolute -top-40 right-0 w-[150%] max-w-[400px] h-[400px] rounded-full bg-indigo-600/5 dark:bg-indigo-500/5 blur-3xl -z-10" />
     </section>
   );
 };

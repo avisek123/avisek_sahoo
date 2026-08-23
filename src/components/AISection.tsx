@@ -15,7 +15,7 @@ export const AISection: React.FC = () => {
     <section className="py-24 border-b border-border-custom bg-background relative overflow-hidden">
       
       {/* Background visual element */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-indigo-500/[0.02] dark:bg-indigo-400/[0.01] rounded-full blur-3xl -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] max-w-[600px] h-[300px] bg-indigo-500/[0.02] dark:bg-indigo-400/[0.01] rounded-full blur-3xl -z-10" />
 
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center text-left">

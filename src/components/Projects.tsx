@@ -35,11 +35,11 @@ export const Projects: React.FC = () => {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6 }}
                 data-cursor="view"
-                className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center group/card"
+                className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center group/card"
               >
                 
-                {/* Visual Area (Phone mockup): Alternate left/right on desktop */}
-                <div className={`lg:col-span-6 flex justify-center order-1 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
+                {/* Visual Area (Phone mockup): Always on top on mobile, alternate left/right on md+ */}
+                <div className={`md:col-span-12 lg:col-span-6 flex justify-center order-1 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
                   <motion.div 
                     className="relative premium-transition group-hover/card:scale-[1.03] group-hover/card:-translate-y-2"
                     transition={{ duration: 0.4 }}
@@ -52,8 +52,8 @@ export const Projects: React.FC = () => {
                   </motion.div>
                 </div>
 
-                {/* Information Area: Alternate right/left on desktop */}
-                <div className={`lg:col-span-6 text-left space-y-6 order-2 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
+                {/* Information Area: Text always below image on mobile, alternate right/left on md+ */}
+                <div className={`md:col-span-12 lg:col-span-6 text-left space-y-6 order-2 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
                   
                   {/* Project Number & Category */}
                   <div className="flex items-center gap-4">

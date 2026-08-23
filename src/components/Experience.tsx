@@ -42,7 +42,7 @@ export const Experience: React.FC = () => {
         </div>
 
         {/* Vertical Timeline */}
-        <div className="relative border-l border-border-custom ml-4 md:ml-8 pl-8 md:pl-12 space-y-12 text-left">
+        <div className="relative border-l border-border-custom ml-6 sm:ml-8 md:ml-8 pl-8 md:pl-12 space-y-12 text-left">
           
           {profileData.experience.map((job, idx) => {
             const isRoleExpanded = !isMobile || expandedIndex === idx;

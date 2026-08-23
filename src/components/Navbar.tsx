@@ -122,7 +122,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleDarkMode }) =>
                   <a 
                     href={link.href}
                     onClick={(e) => handleLinkClick(e, link.href)}
-                    className="block py-2 hover:text-fg-custom transition-colors"
+                    className="block py-3 hover:text-fg-custom transition-colors"
                   >
                     {link.name}
                   </a>
