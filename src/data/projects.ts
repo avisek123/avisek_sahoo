@@ -22,9 +22,9 @@ export const projectsData: Project[] = [
     id: "vaani",
     number: "01",
     name: "VAANI",
-    category: "Social / Conversation Platform",
-    description: "A conversation platform designed around structured, meaningful dialogue, allowing participants to engage through turn-based conversations and controlled microphone passing.",
-    contribution: "React Native development & AI/LLM integration contribution.",
+    category: "Offline AI Chat App",
+    description: "Built and shipped a privacy-first, fully offline AI chat app using llama.rn. Engineered on-device inference, cutting APK size from ~200MB to ~50MB and dropping AI response latency from 1-2 minutes to 15-30 seconds through system-prompt optimization.",
+    contribution: "Solo Developer & AI Integration Engineer",
     googlePlayUrl: "https://play.google.com/store/apps/details?id=com.avisek2026.vaani&hl=en_IN",
     technologies: ["React Native", "TypeScript", "Expo", "Zustand", "llama.rn", "AI/LLM Integration"],
     features: [

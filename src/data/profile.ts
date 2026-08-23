@@ -80,11 +80,10 @@ export const profileData: Profile = {
       location: "Ahmedabad",
       duration: "May 2023 — Present",
       highlights: [
-        "Ensured software quality through rigorous testing and code review practices.",
-        "Optimized codebase architecture, improving overall application performance by 30%.",
-        "Identified, debugged, and resolved complex runtime issues to enhance stability.",
-        "Led cross-functional teams to coordinate new feature rollouts and product engineering milestones.",
-        "Integrated modern backend technologies and APIs to support real-time workflows and data syncing."
+        "Architected and shipped Vaani, a privacy-first offline AI chat app for Android using on-device LLM via llama.rn.",
+        "Built OTA release pipeline using EAS Update with fingerprint-based runtime versioning, cutting release turnaround for JS-only changes and removing manual store resubmissions.",
+        "Designed a server-driven, modular dynamic UI system for a large-scale sports app supporting 108 unique UI combinations.",
+        "Implemented a backend-driven force-update system and FCM push notification handling, and optimized overall application performance by 30% through architectural refactors."
       ]
     },
     {

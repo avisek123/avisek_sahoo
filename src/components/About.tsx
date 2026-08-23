@@ -89,7 +89,7 @@ export const About: React.FC = () => {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
               <span className="font-sans text-xs text-muted-custom font-semibold">
-                Available for Senior Mobile Roles
+                Available for new projects
               </span>
             </div>
 
